@@ -17,7 +17,7 @@ li{
 
 body{
     font-family: 'Source Code Pro', monospace;
-    background: url("../assets/img/bg2.jpg") no-repeat top center;
+    background: url("portfolio/assets/img/bg2.jpg") no-repeat top center;
     background-attachment: fixed; /* ANEXADO E FIXO */
     background-size: cover; /* PARA SE ADEQUAR AO TAMANHO DA TELA */
 
