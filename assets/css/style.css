@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* PARA AS IMAGENS NÃO SE ESTICAREM*/
+img{
+    display: block;
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    background: url("/assets/img/bg2.jpg") no-repeat top center;
+    background-attachment: fixed; /* ANEXADO E FIXO */
+    background-size: cover; /* PARA SE ADEQUAR AO TAMANHO DA TELA */
+
+    /* COMO SE FOSSE UM GRANDE CONTAINER NA BODY QUE CENTRALIZA TODO O CONTEÚDO */
+    display: grid; 
+    justify-items: center;
+    align-items: center;
+    height: 150vh;
+    color: #aeaeae;
+}
+
+.container{
+    padding: 0 16px;
+}
+
+.title{
+    font-size: 33px;
+    font-weight: normal; /* TIRA O NEGRITO FALSO*/
+}
+
+.profile{
+    max-width: 452px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.box{
+    background: #EEE;
+    padding: 4rem;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16); /* SOMBREADO QUE DA IMPRESSÃO DE PROFUNDIDADE */
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    margin: 0 auto 2rem auto; /* PARA DEIXAR A IMAGEM CENTRALIZADA INDEPENDENTE DO TAMANHO DO TEXTO */
+}
+
+/* DADOS DE LOCALIDADE */
+.profile span{
+    font-size: 24px;
+}
+
+.profile p{
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.social-network{
+    display: flex;
+    justify-content: center;
+}
+
+.social-network li{
+    margin-right: 1rem;
+}
+
+.portfolio{
+    max-width: 886px;
+    margin: 3rem 0;
+    box-sizing: border-box;
+}
+
+.portfolio ul{
+    margin-top: 3rem;
+}
+
+.portfolio li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 1rem;
+    color: #606060;
+}
+.portfolio li + li{ /* li ADJACENTE */
+    margin-top: 3rem;
+}
+
+.portfolio h2{
+     font-weight: normal;
+     margin-bottom: 1rem;
+ }
+
+.portfolio img{
+    width: 250px;
+    height: 250px;
+}
+.stacks{
+    background-color: rgb(218, 217, 217);
+    border-radius: 10px;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: small;
+}
+
+footer p{
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 16px antiquewhite;
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+@media (max-width:740px){
+    body{
+        background-attachment: initial;
+        background-size: contain;
+        background-color:#606060;
+    }
+    .box{
+        padding: 2rem;
+        border-radius: 25px;
+    }
+    
+    .box:first-child{
+        padding: 3rem;
+    }
+    .portfolio ul{
+        margin-top: 1rem;
+    }
+    .portfolio li{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .portfolio h1 small{
+        display: none;
+    }
+    .portfolio li div{
+        max-width: 448px;
+    }
+
+}
